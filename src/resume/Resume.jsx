@@ -25,7 +25,7 @@ export default function Resume() {
                         </div>
                         <div className="header-content">
                             <h1>임채주</h1>
-                            <p className="title">Ediscovery Specialist</p>
+                            <p className="title">IT Specialist</p>
                             <div className="contact-info">
                                 <span>📧 cjlim0523@naver.com</span>
                                 <span>📱 010-8622-9529</span>
@@ -44,8 +44,8 @@ export default function Resume() {
                 <main className="resume-body">
                     <section className="resume-section intro-section">
                         <div className="intro-card glass-card">
-                            <p>👋 <strong>“eDiscovery 전문가를 꿈꾸는 임채주입니다”</strong></p>
-                            <p>꾸준한 성장에 가치를 두는 인재입니다. 새로운 기술과 업무를 접하면 스스로 실습하며 원리를 완전히 이해할 때까지 파고드는 자세로 성장해왔습니다. 개발자로서 쌓아온 로그·데이터 분석 역량을 바탕으로, Deloitte Discovery Forensic Lab에서 eDiscovery 실무를 경험하며 데이터 수집, 처리, 분석 전반에 대한 전문성과 객관적인 사실관계를 규명하는 역량을 쌓아가고 있습니다.</p>
+                            <p>👋 <strong>“IT 스페셜리스트 임채주입니다”</strong></p>
+                            <p>꾸준한 성장에 가치를 두는 인재입니다. 새로운 기술과 업무를 접하면 스스로 실습하며 원리를 완전히 이해할 때까지 파고드는 자세로 성장해왔습니다. 신기술을 빠르게 배우고 실무에 적용하는 것에 힘쓰고 노려합니다.</p>
                         </div>
                     </section>
 
@@ -88,9 +88,11 @@ export default function Resume() {
                                     <h3>딜로이트 안진 회계법인 (Discovery & Analysis Lab)</h3>
                                     <span className="date">2026.07.01 - 재직중</span>
                                 </div>
+                                <p className="role">eDiscovery Specialist</p>
                                 <ul>
                                     <li>Falcon을 활용한 디지털 증거 수집</li>
                                     <li>EnCase를 활용한 Pre-processing 및 conditioning 작업</li>
+                                    <li>Relativity에서 데이터 processing 업무 수행</li>
                                     <li>Relativity에서 Reduction & Review 업무 수행</li>
                                 </ul>
                             </div>
@@ -147,17 +149,17 @@ export default function Resume() {
 
                     <section className="resume-section">
                         <h2>수상</h2>
+                            <div className="exp-item">
+                                <div className="exp-header">
+                                    <h3>헥토 SW 아카데미 프로젝트 은상</h3>
+                                    <span className="date">2025년 12월</span>
+                                </div>
+                            </div>                        
                         <div className="exp-list">
                             <div className="exp-item">
                                 <div className="exp-header">
                                     <h3>군장병 SW 온라인 해커톤 장려상</h3>
                                     <span className="date">2022년 12월</span>
-                                </div>
-                            </div>
-                            <div className="exp-item">
-                                <div className="exp-header">
-                                    <h3>헥토 SW 아카데미 프로젝트 은상</h3>
-                                    <span className="date">2025년 12월</span>
                                 </div>
                             </div>
                         </div>
@@ -192,37 +194,15 @@ export default function Resume() {
                         </div>
                     </section>
 
-                    <section className="resume-section essays">
+                    {/* <section className="resume-section essays">
                         <h2>자기소개서</h2>
                             <div className="essay-item">
                                 <h3>지원 동기</h3>
                                 <p>
-                                    개발자로 서비스를 설계하고 운영하며 다양한 데이터를 다루는 과정에서, 원천 데이터를 직접 분석하여 문제의 원인을 추적하고 해결하는 업무에 흥미를 느꼈습니다. 특히 AWS 환경에서 서비스를 운영하던 중 VPC Flow Logs를 분석하며 반복적인 포트 스캐닝과 비정상적인 접근 시도를 발견한 경험이 있습니다. 개별 로그를 확인하는 데 그치지 않고 시간대별 접근 기록을 재구성하며 원인을 추적했고, 이를 바탕으로 보안 그룹과 접근 정책을 개선하고 CloudWatch와 AWS Lambda를 활용한 모니터링 환경을 구축했습니다. 이 경험을 계기로 데이터가 단순한 기록을 넘어 문제의 원인을 규명하는 중요한 근거가 될 수 있다는 점에 흥미를 느꼈고, 자연스럽게 디지털 증거를 기반으로 기업의 분쟁과 조사 업무를 지원하는 eDiscovery 분야에 관심을 갖게 되어 딜로이트 안진회계법인 Discovery & Analysis Lab에서 실무를 경험하게 되었습니다.
+                                    
                                 </p>
-                                <p>
-                                    딜로이트 안진에서는 실제 기업 프로젝트에 참여하며 eDiscovery의 각 단계에서 필요한 업무를 경험했습니다. 조사 대상자의 업무용 노트북에서 SSD를 분리하고 Falcon을 활용하여 디지털 증거를 수집했으며, EnCase를 통한 Pre-processing과 Relativity 환경에서의 Reduction 및 Review 업무를 수행했습니다. 수집 단계에서는 원본 데이터의 무결성을 유지하며 증거를 확보하는 과정을 경험했고, 처리와 검토 단계에서는 프로젝트별 기준에 따라 관련성이 낮은 데이터를 분류하고 제외하며 검토 대상 데이터의 범위를 좁혀 나갔습니다.
-                                </p>
-                                <p>
-                                    실제 프로젝트를 경험하면서 eDiscovery는 단순히 데이터를 수집하거나 특정 도구를 사용하는 업무가 아니라, 사건의 목적에 맞는 데이터를 정확하게 확보하고 정해진 절차와 기준에 따라 처리하고 검토하는 일련의 과정이라는 점을 배웠습니다. 또한 작은 오류나 누락도 이후 검토 과정에 영향을 미칠 수 있기 때문에 각 단계에서 정확성과 일관성을 유지하는 것이 중요하다는 점을 체감했습니다. 개발 경험을 통해 갖춘 기술적 이해를 기반으로 eDiscovery 실무를 경험하면서 이 분야를 장기적인 커리어로 발전시키고 싶다는 확신을 갖게 되었으며, 앞으로 다양한 분쟁과 조사 사건을 경험하며 eDiscovery 전반에 대한 이해와 전문성을 더욱 높이고자 합니다.
-                                </p>    
-                            </div>
-
-                            <div className="essay-item">
-                                <h3>입사 후 포부</h3>
-                                <p>
-                                    딜로이트에서 eDiscovery의 수집·Pre-processing·Reduction·Review 전 단계를 지원하며 기본적인 실무 절차와 도구 사용법을 익혔습니다. 입사 후에는 이러한 경험을 바탕으로 개별 작업을 정확하게 수행하는 것을 넘어, 사건의 목적과 전체적인 업무 흐름을 이해하고 필요한 업무를 주체적으로 판단·수행할 수 있는 전문가로 성장하고자 합니다.
-                                </p>
-                                <p>
-                                    초기에는 다양한 디스커버리 프로젝트에 참여하며 각 단계의 실무 역량을 더욱 탄탄하게 쌓아 갈것입니다. 단순히 주어진 작업을 처리하는 데 그치지 않고 왜 해당 데이터를 수집해야 하는지, 어떤 기준으로 처리와 검토가 이루어지는지를 사건 쟁점과 연결해 이해하며 업무를 수행하겠습니다. 이를 통해 장기적으로는 사건의 특성과 쟁점을 파악하고 필요한 데이터의 수집·처리·검토 과정까지 능동적으로 대응할 수 있는 역량을 갖추도록 할 것입니다.
-                                </p>
-                                <p>
-                                    특히 eDiscovery는 개인의 기술적 역량만으로 완결되는 업무가 아니라 변호사와 eDiscovery 실무자, 클라이언트 등 다양한 관계자와 지속적으로 협업하며 진행되는 업무라고 생각합니다. 데이터 처리와 분석 결과를 정확하게 전달하고, 사건의 요구사항을 실무에 반영하기 위해서는 기술적 전문성만큼 원활한 의사소통과 협업 역량도 중요하다고 생각합니다. 따라서 실무 전문성을 높이는 동시에 다양한 관계자의 요구사항을 정확하게 이해하고 적극적으로 소통하며, 프로젝트가 원활하게 진행될 수 있도록 신뢰받는 구성원으로 성장하겠습니다.
-                                </p>
-                                <p>
-                                    장기적으로는 개발 경험과 eDiscovery 실무를 바탕으로, 기술의 가능성과 한계를 정확히 이해하고 이를 사건의 법률적 목적에 맞게 연결할 수 있는 전문가로 성장하고자 합니다. 주어진 작업을 정확히 수행하는 단계를 넘어, 사건의 쟁점과 리스크를 파악하고 이에 맞는 데이터 전략을 제안하고 실행할 수 있는 역량을 갖추겠습니다. 특히 디스커버리와 대규모 조사 사건이 요구하는 무결성과 신속함을 갖춘 기술 전문가로서 변호사, 클라이언트와 긴밀히 협업하며 팀의 의사결정과 결과에 실질적으로 기여하는 구성원이 되겠습니다.
-                                </p>
-                            </div>
-                    </section>
+                            </div>    
+                    </section> */}
                 </main>
 
                 <footer className="resume-footer">

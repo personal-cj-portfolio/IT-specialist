@@ -162,9 +162,9 @@ export default function Home() {
                     </div>
 
                     <div className="hero-copy">
-                        <span className="hero-label">Digital Forensics &amp; IT Audit</span>
+                        <span className="hero-label">IT Specialist</span>
                         <h1>임채주&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lim Chae-Ju</h1>
-                        <p className="hero-title">Associate Digital Forensics &amp; eDiscovery Specialist</p>
+                        <p className="hero-title">Software Engineer</p>
                         {/* <p className="hero-summary">
                             디지털 자산 보호와 포렌식 분석, IT 감사 관점의 문제 해결에 집중하는 포트폴리오입니다.
                         </p> */}
