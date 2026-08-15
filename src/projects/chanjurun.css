@@ -1,0 +1,9 @@
+@import "../detail-pages.css";
+
+.chanjurun .hero {
+    min-height: 260px;
+}
+
+.chanjurun .page-title {
+    font-size: clamp(2.1rem, 4vw, 4rem);
+}

@@ -1,0 +1,5 @@
+@import "../detail-pages.css";
+
+.hecto-award .cert-container {
+    justify-items: center;
+}

@@ -1,0 +1,48 @@
+:root {
+    --bg-white: #ffffff;
+    --bg-card: #ffffff;
+    --trust-green: #004d40;
+    --trust-green-strong: #00362d;
+    --primary: var(--trust-green);
+    --secondary: #0f172a;
+    --accent: var(--trust-green);
+    --text-strong: #10211d;
+    --text-main: #1f2937;
+    --text-subtle: #4b5563;
+    --text-muted: #6b7280;
+    --text-faint: #74808c;
+    --glass-border: #dbe2df;
+    --line-soft: #d8e0dc;
+
+    --font-heading: "IBM Plex Sans", "Inter", "Segoe UI", sans-serif;
+    --font-body: "Inter", "IBM Plex Sans", "Segoe UI", sans-serif;
+    --font-mono: "IBM Plex Mono", "SFMono-Regular", "SF Mono", Consolas, monospace;
+
+    --resume-bg: var(--bg-white);
+    --resume-text-main: #111111;
+    --resume-text-muted: #666666;
+    --resume-accent: var(--primary);
+    --resume-border: #eeeeee;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-white);
+    color: var(--text-main);
+    font-family: var(--font-body);
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+a,
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}

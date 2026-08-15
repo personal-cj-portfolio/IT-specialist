@@ -1,0 +1,347 @@
+/* ===============================
+   RESUME PAGE STYLES - MINIMALIST LIGHT MODE
+=============================== */
+.resume-page {
+    background-color: var(--resume-bg);
+    min-height: 100vh;
+    padding: 6rem 2rem;
+    color: var(--resume-text-main);
+    display: flex;
+    justify-content: center;
+}
+
+.resume-container {
+    background: white;
+    width: 100%;
+    max-width: 850px;
+    padding: 0;
+    /* Removed shadows and complex animations as requested */
+    animation: resumeFadeIn 0.6s ease-out;
+}
+
+@keyframes resumeFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Header Section */
+.resume-header {
+    position: relative;
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 3rem;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.resume-header .back-link {
+    position: absolute;
+    top: -3rem;
+    left: 0;
+    color: var(--resume-text-muted);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.resume-header .back-link:hover {
+    color: var(--primary);
+}
+
+.header-top {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.profile-img-container {
+    flex-shrink: 0;
+    width: 140px;
+    height: 176px;
+    border-radius: 4px;
+    /* Minimalist semi-square */
+    overflow: hidden;
+    border: none;
+}
+
+.resume-profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: #f3f4f6;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+    color: var(--resume-text-main);
+    letter-spacing: -0.02em;
+}
+
+.header-content .title {
+    font-size: 1.2rem;
+    color: var(--resume-accent);
+    font-weight: 700;
+    margin: 0.5rem 0 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    color: var(--resume-text-muted);
+    font-size: 0.9rem;
+}
+
+.contact-info a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid var(--resume-border);
+}
+
+.contact-info a:hover {
+    color: var(--resume-accent);
+    border-bottom-color: var(--resume-accent);
+}
+
+.download-btn {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.8rem 0.6rem;
+    border-radius: 4px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.download-btn:hover {
+    background: var(--secondary);
+}
+
+/* Sections */
+.resume-section {
+    margin-bottom: 4rem;
+}
+
+.resume-section h2 {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-bottom: 2px solid var(--primary);
+    display: inline-block;
+    padding-bottom: 0.3rem;
+    padding-left: 0;
+}
+
+.resume-section p {
+    line-height: 1.7;
+    color: var(--resume-text-muted);
+}
+
+/* Items */
+.exp-item,
+.project-item,
+.edu-item {
+    margin-bottom: 2.5rem;
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+}
+
+.exp-header h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--resume-text-main);
+}
+
+.exp-header .date {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--resume-text-muted);
+}
+
+.role {
+    color: var(--resume-accent);
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-bottom: 0.8rem;
+}
+
+.resume-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resume-section li {
+    position: relative;
+    padding-left: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--resume-text-muted);
+}
+
+.resume-section li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--resume-text-main);
+}
+
+/* Grids */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 2rem;
+}
+
+.skill-cat strong {
+    display: block;
+    color: var(--resume-text-main);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border-bottom: 1px solid var(--resume-border);
+    padding-bottom: 0.5rem;
+}
+
+.skill-cat ul {
+    font-size: 0.85rem;
+}
+
+.skill-cat li {
+    margin-bottom: 0.3rem;
+}
+
+.lang-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.lang-item {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--resume-border);
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang-item strong {
+    color: var(--resume-text-main);
+}
+
+.lang-item span {
+    color: var(--resume-text-muted);
+    font-size: 0.85rem;
+}
+
+/* Intro & Essays */
+.intro-card {
+    background: transparent;
+    padding: 0;
+    border: none;
+    margin-bottom: 2rem;
+}
+
+.essay-item {
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+}
+
+.essay-item h3 {
+    font-size: 1.1rem;
+    color: var(--resume-text-main);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.essay-item p {
+    margin-bottom: 1.2rem;
+    text-align: justify;
+}
+
+.resume-footer {
+    margin-top: 4rem;
+    padding: 2rem 0;
+    text-align: center;
+    color: var(--resume-text-muted);
+    font-size: 0.8rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .resume-page {
+        padding: 4rem 1.5rem;
+    }
+
+    .header-top {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .resume-header {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .contact-info {
+        justify-content: center;
+    }
+
+    .exp-header {
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .resume-page {
+        padding: 0;
+    }
+
+    .resume-container {
+        max-width: 100%;
+        border: none;
+    }
+
+    .download-btn,
+    .back-link {
+        display: none !important;
+    }
+
+    .resume-section {
+        margin-bottom: 2rem;
+    }
+
+    .intro-card {
+        background: white !important;
+        border: 1px solid #000 !important;
+    }
+
+    .resume-section h2 {
+        border-left: 5px solid #000 !important;
+    }
+}

@@ -1,0 +1,234 @@
+/* ===============================
+   PAGE WRAPPER & SCOPED STYLES
+ =============================== */
+.swacademy {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 2rem 8rem;
+    animation: swacademyFadeIn 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes swacademyFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===============================
+   HERO COVER (Scoped)
+=============================== */
+.swacademy .hero {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    border-radius: 24px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.swacademy .hero-img {
+    width: 100%;
+    height: 123%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.swacademy .hero:hover .hero-img {
+    transform: scale(1.02);
+}
+
+.swacademy .hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0) 60%);
+}
+
+.swacademy .hero-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.swacademy .hero .page-title {
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin: 0;
+    color: var(--text-main);
+    letter-spacing: -0.02em;
+}
+
+.swacademy .hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    margin-top: 1rem;
+    max-width: 600px;
+    font-weight: 600;
+}
+
+.swacademy .back-link {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
+    padding: 0.5rem 1rem;
+    border-radius: 100px;
+    color: var(--text-main);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+    border: 1px solid var(--glass-border);
+}
+
+.swacademy .back-link:hover {
+    color: var(--primary);}
+
+/* ===============================
+   SECTIONS (Scoped)
+=============================== */
+.swacademy .section {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 3.5rem;
+    margin-bottom: 4rem;
+    border: 1px solid var(--glass-border);
+}
+
+.swacademy .section h2 {
+    font-family: var(--font-heading);
+    color: var(--text-main);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.swacademy .section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 4px;
+    background: var(--primary);
+    border-radius: 2px;
+}
+
+.swacademy .section h3 {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    color: var(--text-main);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.swacademy .section p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    max-width: 75ch;
+}
+
+.swacademy .section ul {
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.swacademy .section li {
+    color: var(--text-muted);
+    line-height: 1.8;
+    margin-bottom: 0.8rem;
+    font-size: 1.05rem;
+}
+
+.swacademy .section li::marker {
+    color: var(--primary);
+}
+
+.swacademy .section strong {
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+.swacademy .link-btn {
+    display: inline-flex;
+    align-items: center;
+    background: #f8fafc;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    color: var(--text-main);
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid var(--glass-border);
+    transition: all 0.2s;
+    margin-bottom: 2rem;
+}
+
+.swacademy .link-btn:hover {
+    color: var(--primary);background: var(--primary);
+    border-color: var(--primary);
+    color: white;
+}
+
+/* ===============================
+   IMAGES (Scoped)
+=============================== */
+.swacademy .section img {
+    width: 100%;
+    border-radius: 16px;
+    margin-top: 1.5rem;
+    border: 1px solid var(--glass-border);
+}
+
+.swacademy .curriculum-img {
+    max-width: 45%;
+    display: block;
+}
+
+/* ===============================
+   RESPONSIVE (Scoped)
+=============================== */
+@media (max-width: 768px) {
+    .swacademy {
+        padding: 1rem;
+    }
+
+    .swacademy .hero {
+        height: 35vh;
+        border-radius: 16px;
+    }
+
+    .swacademy .hero .page-title {
+        font-size: 2rem;
+    }
+
+    .swacademy .hero-overlay {
+        padding: 1.5rem;
+    }
+
+    .swacademy .section {
+        padding: 2rem;
+    }
+
+    .swacademy .curriculum-img {
+        max-width: 100%;
+    }
+}

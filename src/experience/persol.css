@@ -1,0 +1,363 @@
+.persol {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px 20px 64px;
+    background: #f7f8f7;
+    animation: persolFadeIn 0.4s ease;
+}
+
+@keyframes persolFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(14px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.persol-hero {
+    position: relative;
+    margin-bottom: 28px;
+    overflow: hidden;
+    border: 1px solid #e1e7e4;
+    border-radius: 18px;
+    background: #ffffff;
+}
+
+.persol-back-link {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    z-index: 3;
+    padding: 8px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    background: rgba(16, 33, 29, 0.58);
+    backdrop-filter: blur(10px);
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.79rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+}
+
+.persol-back-link:hover {
+    background: rgba(16, 33, 29, 0.7);
+}
+
+.persol-hero-media {
+    position: relative;
+    min-height: 280px;
+    background: #dfe6e2;
+}
+
+.persol-hero-media::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(16, 33, 29, 0.12) 0%, rgba(16, 33, 29, 0.36) 100%);
+}
+
+.persol-hero-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.persol-hero-copy {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+    gap: 28px;
+    padding: 28px 30px 30px;
+    background: #fcfcfb;
+}
+
+.persol-hero-headline {
+    display: grid;
+    gap: 12px;
+    max-width: 620px;
+}
+
+.persol-kicker,
+.persol-section-heading p {
+    font-size: 0.72rem;
+    line-height: 1;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #9E9E9E;
+}
+
+.persol-hero-copy h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 3vw, 3rem);
+    line-height: 1.04;
+    letter-spacing: -0.05em;
+    color: var(--text-strong);
+    text-wrap: balance;
+}
+
+.persol-summary {
+    max-width: 44ch;
+    font-size: 0.98rem;
+    line-height: 1.78;
+    color: var(--text-subtle);
+}
+
+.persol-highlight-list {
+    display: grid;
+    gap: 10px;
+    align-content: start;
+    padding-top: 2px;
+}
+
+.persol-highlight-item,
+.persol-fact-row {
+    display: grid;
+    grid-template-columns: 82px minmax(0, 1fr);
+    gap: 14px;
+    align-items: baseline;
+}
+
+.persol-highlight-item span,
+.persol-fact-row span {
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+}
+
+.persol-highlight-item strong,
+.persol-fact-row strong {
+    font-size: 0.94rem;
+    line-height: 1.62;
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+.persol-section {
+    padding: 22px 0 26px;
+    border-top: 1px solid #dce4e0;
+}
+
+.persol-section:first-of-type {
+    border-top: none;
+    padding-top: 0;
+}
+
+.persol-section-layout {
+    display: grid;
+    grid-template-columns: 180px minmax(0, 1fr);
+    gap: 28px;
+}
+
+.persol-section-heading {
+    display: grid;
+    align-content: start;
+    gap: 8px;
+}
+
+.persol-section-heading h2 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    line-height: 1.12;
+    letter-spacing: -0.04em;
+    color: var(--text-strong);
+}
+
+.persol-section-body {
+    min-width: 0;
+}
+
+.persol-overview-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(260px, 0.95fr);
+    gap: 28px;
+}
+
+.persol-overview-copy,
+.persol-learning-list,
+.persol-fact-table {
+    display: grid;
+    gap: 14px;
+}
+
+.persol-overview-copy p,
+.persol-contribution-item p,
+.persol-process-item p,
+.persol-learning-item p {
+    font-size: 0.98rem;
+    line-height: 1.82;
+    color: var(--text-subtle);
+    max-width: 66ch;
+    text-wrap: pretty;
+}
+
+.persol-fact-table {
+    gap: 12px;
+}
+
+.persol-fact-row {
+    padding-bottom: 12px;
+    border-bottom: 1px solid #eaeeec;
+}
+
+.persol-contribution-list,
+.persol-process-list {
+    display: grid;
+}
+
+.persol-contribution-item,
+.persol-process-item {
+    display: grid;
+    gap: 18px;
+    padding: 15px 0;
+    border-top: 1px solid #eaeeec;
+}
+
+.persol-contribution-item {
+    grid-template-columns: 220px minmax(0, 1fr);
+}
+
+.persol-process-item {
+    grid-template-columns: 64px minmax(0, 1fr);
+}
+
+.persol-contribution-item:first-child,
+.persol-process-item:first-child {
+    padding-top: 0;
+    border-top: none;
+}
+
+.persol-contribution-item h3,
+.persol-process-item h3 {
+    font-family: var(--font-heading);
+    font-size: 1.03rem;
+    line-height: 1.42;
+    letter-spacing: -0.02em;
+    color: var(--text-strong);
+}
+
+.persol-process-index {
+    font-family: var(--font-mono);
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: #9E9E9E;
+    padding-top: 2px;
+}
+
+.persol-reflection-block {
+    display: grid;
+    gap: 18px;
+    max-width: 760px;
+}
+
+.persol-reflection-summary {
+    padding-left: 18px;
+    border-left: 3px solid #9E9E9E;
+    color: var(--text-main);
+    font-size: 1rem;
+    line-height: 1.86;
+    text-wrap: pretty;
+}
+
+.persol-learning-list {
+    gap: 12px;
+}
+
+.persol-learning-item {
+    display: grid;
+    grid-template-columns: 8px minmax(0, 1fr);
+    gap: 12px;
+    align-items: start;
+}
+
+.persol-learning-item h3 {
+    font-family: var(--font-heading);
+    font-size: 0.98rem;
+    line-height: 1.35;
+    letter-spacing: -0.02em;
+    color: var(--text-strong);
+    margin-bottom: 4px;
+}
+
+.persol-learning-item span {
+    width: 6px;
+    height: 6px;
+    margin-top: 10px;
+    border-radius: 999px;
+    background: #9E9E9E;
+}
+
+.persol-certificate-frame {
+    max-width: 760px;
+    padding: 12px;
+    border: 1px solid #e1e7e4;
+    border-radius: 14px;
+    background: #fbfcfb;
+}
+
+.persol-certificate-image {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    border: 1px solid #e3e8e5;
+}
+
+@media (max-width: 980px) {
+    .persol-hero-copy,
+    .persol-section-layout,
+    .persol-overview-grid,
+    .persol-contribution-item {
+        grid-template-columns: 1fr;
+    }
+
+    .persol-highlight-list {
+        padding-top: 10px;
+        border-top: 1px solid #eaeeec;
+    }
+}
+
+@media (max-width: 768px) {
+    .persol {
+        padding: 16px 14px 52px;
+    }
+
+    .persol-hero {
+        border-radius: 14px;
+    }
+
+    .persol-back-link {
+        top: 14px;
+        left: 14px;
+    }
+
+    .persol-hero-media {
+        min-height: 220px;
+    }
+
+    .persol-hero-copy {
+        gap: 20px;
+        padding: 20px 18px 22px;
+    }
+
+    .persol-section {
+        padding: 18px 0 22px;
+    }
+
+    .persol-highlight-item,
+    .persol-fact-row,
+    .persol-process-item {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+
+    .persol-contribution-item {
+        gap: 8px;
+    }
+}
