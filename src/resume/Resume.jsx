@@ -31,7 +31,6 @@ export default function Resume() {
                                 <span>📱 010-8622-9529</span>
                                 <span>🎂 2000.05.23</span>
                                 <span>🚀 <a href="https://github.com/cjlim05" target="_blank" rel="noreferrer">github.com/cjlim05</a></span>
-                                <span>📝 <a href="https://cjlim0523.github.io/cjlim0523/" target="_blank" rel="noreferrer">Portfolio</a></span>
                                 <span>🔗 <a href="https://www.linkedin.com/in/chaeju/" target="_blank" rel="noreferrer">LinkedIn</a></span>
                             </div>
                         </div>
