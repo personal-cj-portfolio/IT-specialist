@@ -34,8 +34,8 @@ const contributionItems = [
         body: '수집된 포렌식 이미지를 EnCase를 통해 인덱싱하고, 파일시스템 구조 분석 및 메타데이터(생성/수정/접근 일시, 작성자, 경로 정보) 추출을 진행했습니다. 삭제된 파일 복구(Carving), 암호화/압축 파일 식별, 시스템 아티팩트(레지스트리, 이벤트 로그, 링크 파일 등) 분석을 통해 리뷰 대상 데이터의 범위를 정제했습니다. 이 과정에서 데이터 볼륨과 파일 유형에 따라 프로세싱 전략(필터 조건, 인덱싱 옵션)을 조정하며 처리 효율을 높였습니다.',
     },
     {
-        title: 'Conditioning, Reduction & Review (Relativity)',
-        body: '국내 대형 조선/중공업 기업 관련 리뷰 프로젝트에서 Relativity 플랫폼을 활용해 프로세싱된 데이터를 로드 및 컨디셔닝했습니다. 중복 제거(Deduplication), 근접 중복 제거(Near-Duplicate), 이메일 스레딩(Email Threading), 키워드 서치 조건 설계를 통해 리뷰 대상 문서량(Data Reduction)을 실질적으로 줄이는 작업을 수행했습니다. 이후 리뷰어들의 문서 검토를 지원하며 리뷰 배치(Batch) 구성, 진행률 트래킹, QC(품질검증) 프로세스에도 참여했습니다.',
+        title: 'Conditioning, Reduction & Review (Relaivity)',
+        body: '국내 대형 조선/중공업 기업 관련 리뷰 프로젝트에서 Relativity 플랫폼을 활용해 프로세싱된 데이터를 로드 및 컨디셔닝했습니다. 중복 제거(Deduplication), 근접 중복 제거(Near-Duplicate), 키워드 서치 조건 설계를 통해 리뷰 대상 문서량(Data Reduction)을 실질적으로 줄이는 작업을 수행했습니다. 이후 리뷰어들의 문서 검토를 지원하며 리뷰 배치(Batch) 구성, 진행률 트래킹, QC(품질검증) 프로세스에도 참여했습니다.',
     },
 ];
 
@@ -52,8 +52,8 @@ const processSteps = [
     },
     {
         index: '03',
-        title: 'Relativity 컨디셔닝 및 Reduction',
-        body: '프로세싱된 데이터를 Relativity에 로드하고, 중복 제거·이메일 스레딩·키워드 검색을 통해 리뷰 대상 문서 규모를 축소했습니다. 이 단계에서의 정확도가 이후 리뷰 효율에 직접적인 영향을 미친다는 점을 실무를 통해 체감했습니다.',
+        title: 'Relativity 호스팅및 Reduction',
+        body: '프로세싱된 데이터를 Relativity에 호스팅하고, 중복 제거·이메일 스레딩·키워드 검색을 통해 리뷰 대상 문서 규모를 축소했습니다. 이 단계에서의 정확도가 이후 리뷰 효율에 직접적인 영향을 미친다는 점을 실무를 통해 체감했습니다.',
     },
     {
         index: '04',
@@ -128,8 +128,8 @@ export default function deloitte() {
                                     데이터 수집, 프로세싱, 컨디셔닝, 리뷰 지원의 업무를 진행했습니다. 
                                 </p>
                                 <p>
-                                    Falcon을 통한 포렌식 이미징, EnCase를 통한 프로세싱, Relativity를 통한
-                                    컨디셔닝·reduction·리뷰 지원까지 한 사안의 데이터 라이프사이클 전반에 관여하며,
+                                    Falcon을 통한 포렌식 이미징, EnCase를 통한 프리 프로세싱, Nuix에서 프로세싱, Relativity를 통한
+                                    hosting·reduction·리뷰 지원까지 한 사안의 ediscovery 라이프사이클 전반에 관여하며,
                                     각 단계가 요구하는 절차적 정확성과 조사 맥락에 대한 이해의 중요성을 배웠습니다.
                                 </p>
                             </div>
