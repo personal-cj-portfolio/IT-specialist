@@ -52,7 +52,7 @@ const processSteps = [
     },
     {
         index: '03',
-        title: 'Relativity 호스팅및 Reduction',
+        title: 'Relativity 호스팅 및 Reduction',
         body: '프로세싱된 데이터를 Relativity에 호스팅하고, 중복 제거·이메일 스레딩·키워드 검색을 통해 리뷰 대상 문서 규모를 축소했습니다. 이 단계에서의 정확도가 이후 리뷰 효율에 직접적인 영향을 미친다는 점을 실무를 통해 체감했습니다.',
     },
     {
