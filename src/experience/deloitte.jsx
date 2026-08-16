@@ -73,7 +73,7 @@ const insightPoints = [
     },
     {
         title: '수집부터 리뷰까지 이어지는 책임감',
-        body: '현장 수집, 프로세싱, 컨디셔닝, 리뷰 지원까지 한 사안의 전체 흐름에 관여하면서, 각 단계의 결과물이 다음 단계의 신뢰도를 결정한다는 점을 이해하게 되었고, 단계마다 책임감 있게 기록하고 검증하는 태도를 갖추게 되었습니다.',
+        body: '현장 수집, 프로세싱, 호스팅, 리뷰 지원까지 한 사안의 전체 흐름에 관여하면서, 각 단계의 결과물이 다음 단계의 신뢰도를 결정한다는 점을 이해하게 되었고, 단계마다 책임감 있게 기록하고 검증하는 태도를 갖추게 되었습니다.',
     },
 ];
 
@@ -99,7 +99,7 @@ export default function deloitte() {
                         <h1>DELOITTE Discovery & Analysis Lab</h1>
                         <p className="deloitte-summary">
                             딜로이트 안진 Discovery & Analysis Lab에서 디지털 포렌식 수집부터 eDiscovery 프로세싱,
-                            Relativity 기반 컨디셔닝·reduction·리뷰까지 부정조사 데이터의 전 과정을 직접 수행하고 있습니다.
+                            Relativity에 호스팅, reduction과 리뷰까지 부정조사 데이터의 전 과정을 직접 수행하고 있습니다.
                         </p>
                     </div>
                     <div className="deloitte-highlight-list">
@@ -125,7 +125,7 @@ export default function deloitte() {
                                 <p>
                                     딜로이트 안진 Discovery & Analysis Lab에서,
                                     부정조사 및 eDiscovery 프로젝트에 실제로 참여하여
-                                    데이터 수집, 프로세싱, 컨디셔닝, 리뷰 지원의 업무를 진행했습니다. 
+                                    데이터 수집, 프로세싱, 호스팅, 리뷰 지원의 업무를 진행했습니다. 
                                 </p>
                                 <p>
                                     Falcon을 통한 포렌식 이미징, EnCase를 통한 프리 프로세싱, Nuix에서 프로세싱, Relativity를 통한
